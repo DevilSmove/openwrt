@@ -1,0 +1,19 @@
+{
+  "scope": "Linux 6.18 patch application, exact guard fragment, DT preprocessing/compilation and shell syntax",
+  "full_firmware_built": false,
+  "hardware_tested": false,
+  "guard_cases": 4,
+  "guard_result": "PASS: four exact-fragment probe guard cases",
+  "device_trees": {
+    "mt7981b-netcore-n30-pro": {
+      "compiled": true,
+      "dtb_sha256": "05e31f68232e7db1d54d79da51a668e537fcf84a19da1276a4edc029b1469a32"
+    },
+    "mt7981b-netcore-n30-pro-nmbm": {
+      "compiled": true,
+      "dtb_sha256": "c3d1aed8debade91981772ebdbb2d621b35174adf19622823d1e6f3ce684e012"
+    }
+  },
+  "kernel_source": "https://github.com/torvalds/linux/blob/v6.18/drivers/mtd/nand/spi/core.c",
+  "upstream_pr_head": "39f06f46e94015a0d9c23e548b8e7b09135277b9"
+}

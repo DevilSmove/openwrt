@@ -1,0 +1,10 @@
+{
+  "image_sha256": "518afed002769d0edcda5d6b110ebb3f3e1fe3182b33888ca7566923d5fe55ef",
+  "root_password_hash_present": false,
+  "dropbear_or_ssh_private_keys_present": false,
+  "node_or_subscription_files_present": false,
+  "device_bound_recovery_program_present": false,
+  "openclash_initially_disabled": true,
+  "regular_files_extracted": 1588,
+  "extraction_note": "All regular files extracted; unprivileged host cannot recreate /dev/console device node."
+}

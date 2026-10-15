@@ -1,0 +1,8 @@
+PASS synthetic-metadata-read-identically-by-both-real-implementations
+PASS linux-remap-persist-then-uboot-reload
+PASS uboot-erase-failure-remap-then-linux-reload
+PASS missing-signature-no-auto-create
+PASS both-tables-missing-no-auto-create
+PASS both-table-crcs-invalid-no-auto-create
+PASS single-table-repair-compatible-and-write-side-effect-recorded
+PASS valid-crc-wrong-oob-geometry-rejected

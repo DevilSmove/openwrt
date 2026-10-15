@@ -98,3 +98,13 @@
 	vbus-supply = <&reg_5v>;
 	status = "okay";
 };
+
+/* Share the existing NMBM v1 map with the stock BL2 and web U-Boot.
+ * Do not set mediatek,bmt-force-create: missing maps must fail closed.
+ */
+&{/soc/spi@1100a000/spi_nand@0} {
+	mediatek,nmbm;
+	mediatek,bmt-max-ratio = <1>;
+	mediatek,bmt-max-reserved-blocks = <64>;
+	mediatek,empty-page-ecc-protected;
+};

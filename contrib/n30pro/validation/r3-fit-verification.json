@@ -1,0 +1,96 @@
+{
+  "file": "n30pro-local-r3-openclash-sysupgrade.itb",
+  "size": 42730164,
+  "sha256": "518afed002769d0edcda5d6b110ebb3f3e1fe3182b33888ca7566923d5fe55ef",
+  "components": [
+    {
+      "name": "/images/kernel-1",
+      "size": 6116788,
+      "sha256": "f3be23917c91a677875452ea1a63b11f0ebff2b23d96bd6d1dfacf3405d4b1a6",
+      "hashes": [
+        "crc32",
+        "sha1"
+      ],
+      "uncompressed_size": 14313480,
+      "uncompressed_sha256": "392f2fbe7b0b6f414a423a785505fc3724eb5ec32bef26e257d1a8c12af00486",
+      "load": "0x44000000",
+      "end": "0x44da6808",
+      "version": [
+        "Linux version 6.12.80 (n30-local@local) (aarch64-openwrt-linux-musl-gcc (OpenWrt GCC 14.3.0 unknown) 14.3.0, GNU ld (GNU Binutils) 2.44) #0 SMP Tue Apr  7 02:36:11 2026"
+      ],
+      "arm64_text_offset": "0x0",
+      "arm64_image_size": 14680064
+    },
+    {
+      "name": "/images/fdt-1",
+      "size": 26337,
+      "sha256": "6e9a822d11bd3f99fbcf2a2d346a806cdc00f4e2d761fd35dd98b7952884e03d",
+      "hashes": [
+        "crc32",
+        "sha1"
+      ],
+      "device_tree": {
+        "model": "Netcore N30PRO",
+        "partitions": {
+          "BL2": [
+            0,
+            1048576
+          ],
+          "u-boot-env": [
+            1048576,
+            524288
+          ],
+          "Factory": [
+            1572864,
+            2097152
+          ],
+          "FIP": [
+            3670016,
+            2097152
+          ],
+          "ubi": [
+            5767168,
+            120061952
+          ]
+        },
+        "nmbm_enabled_at_actual_spi_nand_node": true,
+        "force_create": false,
+        "usb_vbus_gpio": 23,
+        "lan_labels": [
+          "lan1",
+          "lan2",
+          "lan3",
+          "lan4"
+        ]
+      }
+    },
+    {
+      "name": "/images/rootfs-1",
+      "size": 36360192,
+      "sha256": "15c132bc5e630dcf6523283a00899e1d597c6aaf1f1fd53eae58cab49d82e332",
+      "hashes": [
+        "crc32",
+        "sha1"
+      ]
+    }
+  ],
+  "metadata": {
+    "metadata_version": "1.1",
+    "compat_version": "2.0",
+    "compat_message": "Requires NMBM-enabled web U-Boot and valid original NMBM tables; do not force-upgrade from raw-MTD r1.",
+    "new_supported_devices": [
+      "netcore,n30pro"
+    ],
+    "supported_devices": [
+      "netcore,n30pro - Image version mismatch: image 2.0, device 1.0. Please wipe config during upgrade (force required) or reinstall. Reason: Requires NMBM-enabled web U-Boot and valid original NMBM tables; do not force-upgrade from raw-MTD r1."
+    ],
+    "version": {
+      "dist": "N30Local",
+      "version": "r3-openclash-offline-candidate",
+      "revision": "r33829-0b9cd1fd001a",
+      "target": "mediatek/filogic",
+      "board": "netcore_n30pro"
+    }
+  },
+  "metadata_crc_pass": true
+}

@@ -1,0 +1,35 @@
+{
+  "image_sha256": "518afed002769d0edcda5d6b110ebb3f3e1fe3182b33888ca7566923d5fe55ef",
+  "r3_boot_verified": true,
+  "fit_readback_sha256": "518afed002769d0edcda5d6b110ebb3f3e1fe3182b33888ca7566923d5fe55ef",
+  "fit_readback_matches": true,
+  "bl2_factory_fip_unchanged": true,
+  "overlay_available_mib": 55.328125,
+  "lan4_link_mbps": 1000,
+  "openclash_version": "0.48.002",
+  "mihomo_version": "1.19.32",
+  "proxy_enabled": false,
+  "proxy_process_running": false,
+  "automatic_updates_enabled": false,
+  "kernel_modules_loaded": [
+    "tun",
+    "inet_diag",
+    "nft_tproxy",
+    "nf_tproxy_ipv4",
+    "nf_tproxy_ipv6"
+  ],
+  "ubi_warning": {
+    "reserved_pebs": 17,
+    "expected_pebs": 19,
+    "bad_pebs": 0,
+    "corrupted_pebs": 0
+  },
+  "wifi_client_tests": {
+    "2g": "user confirmed association and LuCI login with original password PASS",
+    "5g": "user confirmed association and LuCI login with original password PASS; station/DHCP observed"
+  },
+  "other_lan_ports": "LAN1-3 previously passed under r2; not physically retested this turn",
+  "proxy_internet_functional_test": false,
+  "scope": "Historical 2026-10-14 r3 test on one N30 Pro; not a Linux 6.18 hardware test",
+  "bad_block_guarantee": false
+}

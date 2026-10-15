@@ -1,0 +1,15 @@
+--- a/drivers/mtd/nand/spi/core.c
++++ b/drivers/mtd/nand/spi/core.c
+@@ -1,2 +1,11 @@
+-	mtk_bmt_attach(mtd);
++	ret = mtk_bmt_attach(mtd);
++	/* Never expose raw offsets if the required NMBM map failed to load. */
++	if (ret && of_property_read_bool(mtd_get_of_node(mtd),
++					 "mediatek,nmbm")) {
++		dev_err(&mem->spi->dev,
++			"Required NMBM attach failed (%d); refusing raw MTD fallback\n",
++			ret);
++		goto err_spinand_cleanup;
++	}
++
+ 	ret = mtd_device_register(mtd, NULL, 0);

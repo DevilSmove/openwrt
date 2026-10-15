@@ -1,0 +1,32 @@
+[
+  {
+    "path": "drivers/mtd/nmbm/nmbm-private.h",
+    "sha256": "7a3b027379fe0a0e33a330237ea3b67a3ffbf5c80716ac6a9f61e6b5d379031e",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/drivers/mtd/nmbm/nmbm-private.h"
+  },
+  {
+    "path": "drivers/mtd/nmbm/nmbm-debug.h",
+    "sha256": "b2e106c54f6c6014247925d783098728504674655bde2fa1501f637b15da176f",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/drivers/mtd/nmbm/nmbm-debug.h"
+  },
+  {
+    "path": "include/nmbm/nmbm.h",
+    "sha256": "b6beb7ff328b26490e9749f13ce4a29f281031546c48a6cdc2b6b352b464df50",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/include/nmbm/nmbm.h"
+  },
+  {
+    "path": "include/nmbm/nmbm-os.h",
+    "sha256": "9b4cbb9155e985c3b674f5f9dc2b5b324cab4afc6426f2ad0c1e3386504f48b5",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/include/nmbm/nmbm-os.h"
+  },
+  {
+    "path": "drivers/mtd/nmbm/nmbm-core.c",
+    "sha256": "f11f5b83c5c029ba2f107171999c7feb581bc2cc9d71d2c5d77b479069d3c5a0",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/drivers/mtd/nmbm/nmbm-core.c"
+  },
+  {
+    "path": "drivers/mtd/nmbm/nmbm-debug.inl",
+    "sha256": "ba4e2d0fb9f0b9aa54eda9c00023d71d0b5bd35b5c64ce158fa6c7a9ba4f8816",
+    "url": "https://raw.githubusercontent.com/Yuzhii0718/bl-mt798x-dhcpd/384fdd8a743506a9c3ea73289d419f9d6519d61f/uboot-mtk-20250711/drivers/mtd/nmbm/nmbm-debug.inl"
+  }
+]

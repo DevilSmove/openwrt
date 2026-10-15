@@ -1,0 +1,13 @@
+--- a/drivers/mtd/ubi/build.c
++++ b/drivers/mtd/ubi/build.c
+@@ -852,6 +852,10 @@
+ {
+ 	struct ubi_device *ubi;
+ 	int i, err;
++
++	/* Dedicated RAM recovery must never attach or update UBI metadata. */
++	if (of_property_read_bool(of_chosen, "openwrt,disable-ubi-attach"))
++		return -EPERM;
+ 
+ 	if (max_beb_per1024 < 0 || max_beb_per1024 > MAX_MTD_UBI_BEB_LIMIT)
+ 		return -EINVAL;

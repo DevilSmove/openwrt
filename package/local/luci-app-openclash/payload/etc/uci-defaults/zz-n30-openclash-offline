@@ -1,0 +1,9 @@
+#!/bin/sh
+# Fresh-r3 first boot: keep transparent proxy and scheduled downloads disabled.
+for option in enable update auto_update geo_auto_update geosite_auto_update geoip_auto_update geoasn_auto_update chnr_auto_update lgbm_auto_update; do
+    uci -q set openclash.config.$option='0'
+done
+uci -q set openclash.config.core_version='linux-arm64'
+uci -q commit openclash
+/etc/init.d/openclash disable
+exit 0

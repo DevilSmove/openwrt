@@ -1,0 +1,45 @@
+{
+  "only_expected_changes": true,
+  "changes": [
+    [
+      "",
+      "compatible"
+    ],
+    [
+      "",
+      "model"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0",
+      "mediatek,bmt-max-ratio"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0",
+      "mediatek,bmt-max-reserved-blocks"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0",
+      "mediatek,empty-page-ecc-protected"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0",
+      "mediatek,nmbm"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0/partitions/partition@0",
+      "read-only"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0/partitions/partition@100000",
+      "read-only"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0/partitions/partition@180000",
+      "read-only"
+    ],
+    [
+      "/soc/spi@1100a000/spi_nand@0/partitions/partition@380000",
+      "read-only"
+    ]
+  ]
+}
